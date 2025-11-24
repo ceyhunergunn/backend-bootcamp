@@ -1,6 +1,7 @@
-import e from "express";
+import express from "express";
 
 const errorMiddleware = (err, req, res, next) => {
+  console.log("asdf");
   try {
     let error = { ...err };
     error.message = err.message;
